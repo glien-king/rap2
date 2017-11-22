@@ -1,6 +1,6 @@
 # RAP2
 
-![https://travis-ci.org/thx/rap2.svg?branch=master]k
+!()[https://travis-ci.org/thx/rap2.svg?branch=master]
 
 RAP2 is a new project based on [RAP1](https://github.com/thx/RAP).
 
