@@ -4,7 +4,7 @@
 
 RAP2 服务端。
 
-http://rap2.taobao.org
+http://rap2api.taobao.org
 
 ## 本地开发
 
