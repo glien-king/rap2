@@ -4,24 +4,10 @@
 
 RPA2 前端。
 
-http://rap2.alibaba-inc.com/
+http://rap2.taobao.org/
 
 ## 本地开发
 
 ```
 npm run dev
-```
-
-## 本地验证统一登陆
-
-**Step 1** 配置 `/etc/hosts`
-
-```
-127.0.0.1 daily.rap2.alibaba-inc.com
-```
-
-**Step 2**
-
-```
-node scripts/sso.js
 ```
