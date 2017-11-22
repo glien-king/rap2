@@ -8,6 +8,15 @@ RAP2 is a new project based on [RAP1](https://github.com/thx/RAP).
 * DingDing(钉钉交流群)：11789704
 
 
+## Author
+
+* Owner: Alimama FE Team
+* Author:
+  * Before v2.3: all by [@Nuysoft](https://github.com/nuysoft/), creator of [mockjs](mockjs.com).
+  * v2.4+: [Bosn](http://github.com/bosn/)(creator of [RAP1](https://github.com/thx/RAP)) [Nuysoft](https://github.com/nuysoft/)
+  * We are looking for more and more contributors :)
+
+
 ### Tech Arch
 
 * Front-end (rap2-dolores)
