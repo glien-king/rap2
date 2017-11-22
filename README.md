@@ -1,6 +1,6 @@
 # RAP2
 
-<p align="center">
+<p>
   <a title="TravisCI" href="https://travis-ci.org/"><img src="https://travis-ci.org/thx/rap2.svg?branch=master"></a>
 </p>
 
