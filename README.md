@@ -9,6 +9,45 @@ RAP2 is a new project based on [RAP1](https://github.com/thx/RAP).
 * [Working Progress](https://github.com/thx/rap2/wiki)
 * DingDing(钉钉交流群)：11789704
 
+## Deployment
+
+### build & run in development mode
+```sh
+# 1. Install npm & lerna
+ sudo npm i -g npm@^5.5.1
+ sudo npm i -g lerna@^2.5.1
+
+ # 2. bootstrap (automatically npm install by dependencies.)
+ lerna bootstrap
+
+ # 3. init database, user=root, password=[empty string]
+ lerna run init
+
+ # 4. build rap2-dolores
+ lerna run build
+
+ # 5. test cases
+ lerna run test 
+
+ # 6. run in development mode
+ lerna run dev
+
+```
+
+### deploy in production server
+
+#### rap2-delos
+
+```sh
+npm start
+```
+
+### rap2-dolores
+
+```sh
+serve -s build -p {port}
+```
+
 
 ## Author
 
