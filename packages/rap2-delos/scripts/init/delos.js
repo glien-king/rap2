@@ -5,6 +5,7 @@ const { BO_USER_FN, BO_ORGANIZATION_FN, BO_REPOSITORY_FN, BO_MODULE_FN, BO_INTER
 const { BO_USER_COUNT, BO_ORGANIZATION_COUNT, BO_REPOSITORY_COUNT, BO_MODULE_COUNT, BO_INTERFACE_COUNT, BO_PROPERTY_COUNT } = require('./bo')
 const EMPTY_WHERE = { where: {} }
 
+
 async function init () {
   await sequelize.drop()
   await sequelize.sync({

@@ -10,13 +10,18 @@ const logging = process.env.NODE_ENV === 'development'
   }
   : console.log
 
-const sequelize = new Sequelize(config.db.database, config.db.username, config.db.password, {
+const sequelize = new Sequelize({
+  database : config.db.database,
+  username : config.db.username,
+  password : config.db.password,
   host: config.db.host,
   port: config.db.port,
   dialect: config.db.dialect,
   pool: config.db.pool,
   logging: config.db.logging ? logging : false
 })
+
+
 sequelize.authenticate()
   .then((/* err */) => {
     // console.log('Connection has been established successfully.');
