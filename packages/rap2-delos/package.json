@@ -60,6 +60,6 @@
     "linter"
   ],
   "engines": {
-    "install-node": "7.9.0"
+    "install-node": "9.2.0"
   }
 }
