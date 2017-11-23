@@ -18,18 +18,19 @@ RAP2 is a new project based on [RAP1](https://github.com/thx/RAP).
  sudo npm i -g lerna@^2.5.1
 
  # 2. bootstrap (automatically npm install by dependencies.)
- # 3. init database, user=root, password=[empty string]
  lerna bootstrap
 
- # 3. build
+ # 3. init database, user=root, password=[empty string]
+ lerna run create-db
+
+ # 4. build
  lerna run build
 
- # 4. test
+ # 5. test
  lerna run test 
 
- # 5. run in development mode
+ # 6. run in development mode
  lerna run dev
-
 ```
 
 ### deploy in production server
