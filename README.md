@@ -36,13 +36,13 @@ RAP2 is a new project based on [RAP1](https://github.com/thx/RAP).
 
 ### deploy in production server
 
-#### rap2-delos
+#### rap2-delos (back-end data API server)
 
 ```sh
 npm start
 ```
 
-### rap2-dolores
+#### rap2-dolores (front-end static server)
 
 ```sh
 serve -s build -p {port}

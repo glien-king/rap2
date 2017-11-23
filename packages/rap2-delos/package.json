@@ -7,7 +7,7 @@
   "description": "",
   "main": "dispatch.js",
   "scripts": {
-    "init": "node scripts/init",
+    "initialize": "node scripts/init",
     "dev": "NODE_ENV=development nodemon --watch scripts --watch src scripts/dev.js",
     "dev-local": "NODE_ENV=local nodemon --watch scripts --watch src scripts/dev.js",
     "start": "NODE_ENV=production node dispatch.js",
