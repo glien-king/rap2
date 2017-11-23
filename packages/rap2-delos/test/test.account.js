@@ -5,6 +5,17 @@ const should = require('chai').should()
 const Random = require('mockjs').Random
 
 describe('Account', () => {
+  it('/account/count', (done) => {
+    request.get('/account/count')
+      .expect('Content-Type', /json/)
+      .expect(200)
+      .end((err, res) => {
+        should.not.exist(err)
+        done()
+      })
+  })
+
+  /*
   let user = { fullname: Random.cname(), empId: Random.name(), email: Random.email(), password: Random.word(6) }
   let validUser = (user) => {
     user.should.be.a('object').have.all.keys(['id', 'empId', 'fullname', 'email'])
@@ -91,18 +102,6 @@ describe('Account', () => {
       })
   })
   /**
-  it('/account/sso', (done) => {
-    request.post('/account/sso')
-      .send({ id: user.id, empId: user.empId, fullname: user.fullname, email: user.email })
-      .expect('Content-Type', /json/)
-      .expect(200)
-      .end((err, res) => {
-        should.not.exist(err)
-        validUser(res.body.data)
-        done()
-      })
-  })
-  */
   it('/account/remove', (done) => {
     request.get('/account/remove')
       .query({ id: user.id })
@@ -113,4 +112,5 @@ describe('Account', () => {
         done()
       })
   })
+  */
 })

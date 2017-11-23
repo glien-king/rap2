@@ -1,0 +1,22 @@
+language: node_js
+
+cache:
+  directories:
+    - node_modules
+    - $HOME/.npm
+
+notifications:
+  email: false
+
+node_js:
+  - '8'
+
+before_install:
+  - npm i -g npm@^5.5.1
+  - npm i -g lerna^2.5.1
+
+script:
+  - lerna bootstrap
+  - lerna run test
+
+after_success:
