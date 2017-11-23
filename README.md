@@ -21,7 +21,7 @@ RAP2 is a new project based on [RAP1](https://github.com/thx/RAP).
  lerna bootstrap
 
  # 3. init database, user=root, password=[empty string]
- lerna run init
+ lerna run initialize
 
  # 4. build rap2-dolores
  lerna run build
