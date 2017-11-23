@@ -1,8 +1,6 @@
 # RAP2
 
-<p>
-  <a title="TravisCI" href="https://travis-ci.org/"><img src="https://travis-ci.org/thx/rap2.svg?branch=master"></a>
-</p>
+[![Build Status](https://travis-ci.org/thx/rap2.svg?branch=master)](https://travis-ci.org/thx/rap2)
 
 RAP2 is a new project based on [RAP1](https://github.com/thx/RAP).
 
