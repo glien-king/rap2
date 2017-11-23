@@ -7,7 +7,6 @@ const Random = require('mockjs').Random
 describe('Account', () => {
   it('/account/count', (done) => {
     request.get('/account/count')
-      .expect('Content-Type', /json/)
       .expect(200)
       .end((err, res) => {
         should.not.exist(err)
