@@ -6,13 +6,11 @@ const { BO_USER_COUNT, BO_ORGANIZATION_COUNT, BO_REPOSITORY_COUNT, BO_MODULE_COU
 const EMPTY_WHERE = { where: {} }
 
 async function init () {
-  if (process.env.NODE_ENV === 'local') {
-    await sequelize.drop()
-    await sequelize.sync({
-      force: true,
-      logging: console.log
-    })
-  }
+  await sequelize.drop()
+  await sequelize.sync({
+    force: true,
+    logging: console.log
+  })
   await User.destroy(EMPTY_WHERE)
   await Organization.destroy(EMPTY_WHERE)
   await Repository.destroy(EMPTY_WHERE)

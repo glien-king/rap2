@@ -1,5 +1,8 @@
 language: node_js
 
+services:
+  - mysql
+
 cache:
   directories:
     - node_modules
@@ -17,6 +20,8 @@ before_install:
 
 script:
   - lerna bootstrap
+  - lerna run init
+  - lerna run build
   - lerna run test
 
 after_success:

@@ -138,7 +138,11 @@ router.post('/account/register', async(ctx, next) => {
   }
 
   ctx.body = {
-    data: result
+    data: {
+      id: result.id,
+      fullname: result.fullname,
+      email: result.email
+    }
   }
 })
 

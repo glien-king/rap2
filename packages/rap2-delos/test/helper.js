@@ -34,7 +34,7 @@ module.exports = {
         .end((err, res) => {
           should.not.exist(err)
           let { data } = res.body
-          data.should.be.a('object').have.all.keys({ id: users[0].id, empId: users[0].empId, fullname: users[0].fullname, email: users[0].email })
+          data.should.be.a('object').have.all.keys({ id: users[0].id, fullname: users[0].fullname, email: users[0].email })
           done()
         })
     })
