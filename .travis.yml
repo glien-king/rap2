@@ -20,8 +20,7 @@ before_install:
 
 script:
   - lerna bootstrap
-  - lerna run prepare
-  - lerna run init
+  - lerna run build
   - lerna run test
 
 after_success:
